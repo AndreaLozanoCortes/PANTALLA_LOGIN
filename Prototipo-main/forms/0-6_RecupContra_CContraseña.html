@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Contraseña</title>
+    <link rel="stylesheet" href="../css/lgstyle.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
+    <body>
+        <div class="background">
+            <img src="../images/loginbg.jpg" alt="Burridogs">
+            <div class="formulario">
+    
+                <h1>Cambio de contraseña</h1>
+                
+                <div class="inputs">
+                    <label>Contraseña anterior</label>
+                    <div class="username">
+                        <i class="fa fa-key"></i>
+                        <input type="password" placeholder="Ingrese su contraseña anterior" id="myInput">
+                        <span class="ojos" onclick="ContraAnte()">
+                            <i id="vista1" class="fa fa-eye"></i>
+                            <i id="vista2" class="fa fa-eye-slash"></i>
+                        </span>
+                    </div>
+
+                    <label>Contraseña nueva</label>
+                    <div class="username">
+                        <i class="fa fa-key"></i>
+                        <input type="password" placeholder="Ingrese su nueva contraseña" id="myInput1">
+                        <span class="ojos" onclick="Contra()">
+                            <i id="vista1" class="fa fa-eye"></i>
+                            <i id="vista2" class="fa fa-eye-slash"></i>
+                        </span>
+                    </div>
+
+                    <label>Confirmar nueva contraseña</label>
+                    <div class="username">
+                        <i class="fa fa-key"></i>
+                        <input type="password" placeholder="Ingrese sunuevamente su contraseña" id="myInput2">
+                        <span class="ojos" onclick="ConfContra()">
+                            <i id="vista1" class="fa fa-eye"></i>
+                            <i id="vista2" class="fa fa-eye-slash"></i>
+                        </span>
+                    </div>
+
+                    <a href="../forms/main.html"> 
+                        <input type="submit" value="Aceptar">
+                    </a>
+                </div>
+             </div>
+          </div>
+        </div>
+    </div>
+    <!--Funcion para icono del ojo-->
+    <script>
+        function ContraAnte(){
+            var x = document.getElementById("myInput");
+            var y = document.getElementById("vista1");
+            var z = document.getElementById("vista2");
+    
+            if(x.type == 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        function Contra(){
+            var x = document.getElementById("myInput1");
+            var y = document.getElementById("vista1");
+            var z = document.getElementById("vista2");
+    
+            if(x.type == 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        function ConfContra(){
+            var x = document.getElementById("myInput2");
+            var y = document.getElementById("vista1");
+            var z = document.getElementById("vista2");
+
+            if(x.type == 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
